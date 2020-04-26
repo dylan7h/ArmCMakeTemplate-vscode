@@ -1,0 +1,116 @@
+{
+    "version": "2.0.0",
+    "options": {
+        "env": {
+            "Generator": "Unix Makefiles",
+            "BuildDir": "${workspaceFolder}/build",
+            "SourceDir": "${workspaceFolder}",
+            "ToolChain": "${workspaceFolder}/CMakeFiles/toolchain/armclang.cmake",
+            "BuildTool": "C:/msys64/usr/bin/make",
+            "VERBOSE_MAKEFILE": "TRUE"
+        },
+        "BuildArgs": [
+
+        ]
+    },
+    "tasks": [
+        {
+            "label": "CMake Remove Build Directory",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "-E",
+                "remove_directory",
+                "${BuildDir}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": {
+                "base": "$gcc",
+                "fileLocation": "absolute"
+            }
+        },
+        {
+            "label": "CMake Configure",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "-G",
+                "\"${Generator}\"",
+                "-B${BuildDir}",
+                "-H.",
+                "-DCMAKE_TOOLCHAIN_FILE=${ToolChain}",
+                "-DCMAKE_MAKE_PROGRAM=${BuildTool}",
+                "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
+                "-DCMAKE_VERBOSE_MAKEFILE=${VERBOSE_MAKEFILE}",
+                "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": {
+                "base": "$gcc",
+                "fileLocation": "absolute"
+            }
+        },
+        {
+            "label": "CMake Build",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "${BuildDir}",
+                "${BuildArgs}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": {
+                "base": "$gcc",
+                "fileLocation": "absolute"
+            }
+        },
+        {
+            "label": "CMake Clean Rebuild",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "${BuildDir}",
+                "--clean-first",
+                "${BuildArgs}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": {
+                "base": "$gcc",
+                "fileLocation": "absolute"
+            }
+        },
+        {
+            "label": "CMake Clean",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "${BuildDir}",
+                "--target",
+                "'clean'"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": {
+                "base": "$gcc",
+                "fileLocation": "absolute"
+            }
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+C:/Workspace/stm32/ArmCMakeTemplate/build/CMakeFiles/rebuild_cache.dir
+C:/Workspace/stm32/ArmCMakeTemplate/build/CMakeFiles/edit_cache.dir
+C:/Workspace/stm32/ArmCMakeTemplate/build/source/Lib/CMakeFiles/rebuild_cache.dir
+C:/Workspace/stm32/ArmCMakeTemplate/build/source/Lib/CMakeFiles/edit_cache.dir
+C:/Workspace/stm32/ArmCMakeTemplate/build/source/Lib/STM32F3xx_HAL_Driver/CMakeFiles/STM32F3xx_HAL_Driver.dir
+C:/Workspace/stm32/ArmCMakeTemplate/build/source/Lib/STM32F3xx_HAL_Driver/CMakeFiles/rebuild_cache.dir
+C:/Workspace/stm32/ArmCMakeTemplate/build/source/Lib/STM32F3xx_HAL_Driver/CMakeFiles/edit_cache.dir
+C:/Workspace/stm32/ArmCMakeTemplate/build/source/App/CMakeFiles/rebuild_cache.dir
+C:/Workspace/stm32/ArmCMakeTemplate/build/source/App/CMakeFiles/edit_cache.dir
+C:/Workspace/stm32/ArmCMakeTemplate/build/source/App/TestApp1/CMakeFiles/rebuild_cache.dir
+C:/Workspace/stm32/ArmCMakeTemplate/build/source/App/TestApp1/CMakeFiles/edit_cache.dir
+C:/Workspace/stm32/ArmCMakeTemplate/build/source/App/TestApp1/CMakeFiles/Main.dir
+C:/Workspace/stm32/ArmCMakeTemplate/build/source/App/TestApp1/CMakeFiles/TestApp1.dir

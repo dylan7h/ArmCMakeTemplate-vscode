@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "name": "CMake Project Template",
+            "includePath": [
+                "${workspaceFolder}/source/**"
+            ],
+            "defines": [
+                
+            ],
+            "compilerPath": "C:/msys64/mingw32/bin/gcc.exe",
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json"
+        }
+    ],
+    "version": 4
+}
