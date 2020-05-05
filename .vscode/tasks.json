@@ -10,7 +10,6 @@
             "VERBOSE_MAKEFILE": "TRUE"
         },
         "BuildArgs": [
-
         ]
     },
     "tasks": [
@@ -42,6 +41,7 @@
                 "-B${BuildDir}",
                 "-H.",
                 "-DCMAKE_TOOLCHAIN_FILE=${ToolChain}",
+                "-DCMAKE_USER_MAKE_RULES_OVERRIDE=${ToolChain}",
                 "-DCMAKE_MAKE_PROGRAM=${BuildTool}",
                 "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
                 "-DCMAKE_VERBOSE_MAKEFILE=${VERBOSE_MAKEFILE}",

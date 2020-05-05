@@ -4,7 +4,7 @@ cmake_minimum_required(
 
 project(
     CMakeBuildTemplate                      # Project Name
-    LANGUAGES               C               # Project Language
+    LANGUAGES               C ASM           # Project Language
     VERSION                 1.2.0.5         # Version Number
 )
 configure_file( 
@@ -16,9 +16,9 @@ configure_file(
 #enable_testing()
 
 # set build result location
-set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin/Lib/Debug CACHE STRING "*.lib, *.a")
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin/Lib/Debug CACHE STRING "*.dll.a, *.so.a")
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin/App/Debug CACHE STRING "*.dll *.so *.exe *.out")
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin/Lib CACHE STRING "*.lib, *.a")
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin/Lib CACHE STRING "*.dll.a, *.so.a")
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin/App CACHE STRING "*.dll *.so *.exe *.out")
 
 # Set Global Build Option
 # add_compile_options(-std=c99)                   # ANSI C Version
